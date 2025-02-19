@@ -1,0 +1,58 @@
+body {
+  color: red;
+}
+
+.transitionDiv {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+.transitionDiv:hover {
+  width: 300px;
+}
+
+.translateDiv {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px, 100px);
+}
+
+.scaleDiv {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: scaleY(1.5);
+}
+
+.rotateDiv {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: rotate(20deg);
+}
+
+.animatedDiv {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example 4s;
+  color: white;
+}
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}

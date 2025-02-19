@@ -1,0 +1,276 @@
+p {
+  color: red;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-template-columns-rows-container {
+  display: grid;
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+  background-color: dodgerblue;
+  padding: 10px;
+}
+
+.grid-template-columns-rows-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-template-areas-container-item-a {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.grid-template-areas-container-item-b {
+  grid-area: main;
+  background-color: aquamarine;
+}
+
+.grid-template-areas-container-item-c {
+  grid-area: sidebar;
+  background-color: cadetblue;
+}
+
+.grid-template-areas-container-item-d {
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
+
+.grid-template-areas-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.grid-template-container {
+  grid-template:
+    [row1-start] "header header header" 25px [row1-end]
+    [row2-start] "footer footer footer" 25px [row2-end]
+    / auto 50px auto;
+  display: grid;
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.gap-container {
+  display: grid;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 10px;
+  row-gap: 15px;
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.gap-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.justify-items-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: lightpink;
+  padding: 10px;
+  justify-items: center;
+}
+
+.justify-items-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.align-items-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px 100px 100px;
+  background-color: lightpink;
+  padding: 10px;
+  align-items: center;
+}
+
+.align-items-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.justify-content-container {
+  display: grid;
+  grid-template-columns: 100px 150px 250px;
+  background-color: lightpink;
+  padding: 10px;
+  justify-content: center;
+}
+
+.justify-content-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.align-content-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: lightpink;
+  padding: 10px;
+  align-content: center;
+  height: 400px;
+}
+
+.align-content-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-auto-columns-container {
+  display: grid;
+  grid-template-columns: 60px 60px;
+  grid-template-rows: 90px 90px;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid-auto-columns-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-auto-columns-container > .item-1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.grid-auto-columns-container > .item-2 {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+.grid-auto-columns-container {
+  display: grid;
+  grid-template-columns: 60px 60px;
+  grid-template-rows: 90px 90px;
+  grid-auto-columns: 60px;
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.grid-auto-flow-container {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px;
+  grid-template-rows: 100px 100px;
+  grid-auto-flow: row;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid-auto-flow-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-auto-flow-container > .item-1 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.grid-auto-flow-container > .item-5 {
+  grid-column: 5;
+  grid-row: 1 / 3;
+}
+
+.grid-column-row-container {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: row;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid-column-row-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-column-row-container > .item-5 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+
+.grid-justify-self-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: row;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid-justify-self-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-justify-self-container > .item-1 {
+  justify-self: start;
+  width: 150px;
+}
+
+.grid-align-self-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 150px 150px 150px;
+  grid-auto-flow: row;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid-align-self-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-align-self-container > .item-1 {
+  align-self: center;
+  height: 75px;
+}

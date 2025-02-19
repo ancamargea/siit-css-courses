@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Models</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="sticky">I am sticky!</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste quia in
+      tempore, laboriosam repudiandae eius, excepturi consectetur libero placeat
+      consequatur harum hic ipsa eveniet magni. Animi facere sequi quidem!
+    </p>
+
+    <div class="contentBox">This is a content-box container.</div>
+    <div class="borderBox">This is a border-box container.</div>
+
+    <div class="fixedWidth">This is a fixed width div.</div>
+    <div class="percentageWidth">This is a percentage width div.</div>
+    <br />
+
+    <div class="divWith4Paddings">This is a padding div</div>
+    <div class="divWith3Paddings">This is a padding div</div>
+    <div class="divWith2Paddings">This is a padding div</div>
+    <div class="divWith1Padding">This is a padding div</div>
+
+    <br /><br />
+    <h1 class="h1WithBorder">A heading with a solid red border</h1>
+
+    <br />
+    <p class="clearfix">
+      <img
+        src="pineapple.jpg"
+        alt="Pineapple"
+        style="width: 170px; height: 170px; margin-left: 15px"
+        class="floatRight"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+      scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+      congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+      Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+      dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+      venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+      venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+      pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+
+    <div class="clearfix">
+      <div class="box" style="background-color: #bbb">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color: #ccc">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color: #ddd">
+        <p>Some text inside the box.</p>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="relative">This div element has position: relative;</div>
+
+    <div class="fixed">This div element has position: fixed;</div>
+
+    <div class="absolute">This div element has position: absolute;</div>
+
+    <br /><br />
+    <div class="relativeWithAbsoluteInside">
+      This div element has position: relative;
+      <div class="absoluteInsideRelative">
+        This div element has position: absolute;
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="divVisibilityHidden">This div has visibility hidden.</div>
+    <div class="divDisplayNone">This div has display none.</div>
+  </body>
+</html>

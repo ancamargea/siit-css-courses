@@ -1,0 +1,194 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#flex-direction {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-direction div {
+  width: 50px;
+  height: 50px;
+}
+
+#flex-wrap {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flex-wrap div {
+  width: 50px;
+  height: 50px;
+}
+
+#justify-content {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  justify-content: center;
+}
+
+#justify-content div {
+  width: 70px;
+  height: 70px;
+}
+
+#align-items {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+#align-items div {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+#align-content {
+  width: 70px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#align-content div {
+  width: 70px;
+  height: 70px;
+}
+
+#gap {
+  width: 150px;
+  height: 300px;
+  flex-wrap: wrap;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  gap: 10px;
+}
+
+#gap div {
+  width: 70px;
+  height: 70px;
+}
+
+.parentCentered {
+  display: flex;
+  height: 300px; /* Or whatever */
+  border: 1px solid #c3c3c3;
+}
+
+.childCentered {
+  width: 100px; /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto; /* Magic! */
+}
+
+#order {
+  width: 400px;
+  height: 150px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#order div {
+  width: 70px;
+  height: 70px;
+}
+
+div#myRedDIV {
+  order: 2;
+}
+
+div#myBlueDIV {
+  order: 4;
+}
+
+div#myGreenDIV {
+  order: 3;
+}
+
+div#myPinkDIV {
+  order: 1;
+}
+
+#flex-grow {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+#flex-grow div:nth-of-type(1) {
+  flex-grow: 1;
+}
+#flex-grow div:nth-of-type(2) {
+  flex-grow: 3;
+}
+#flex-grow div:nth-of-type(3) {
+  flex-grow: 1;
+}
+#flex-grow div:nth-of-type(4) {
+  flex-grow: 1;
+}
+#flex-grow div:nth-of-type(5) {
+  flex-grow: 1;
+}
+
+#flex-shrink {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+#flex-shrink div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+#flex-shrink div:nth-of-type(2) {
+  flex-shrink: 3;
+}
+
+#flex {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+}
+#flex div {
+  flex: 1;
+}
+
+#align-self {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-start;
+}
+#align-self div {
+  flex: 1;
+}
+#align-self #align {
+  align-self: center;
+}

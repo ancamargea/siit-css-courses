@@ -1,0 +1,140 @@
+p {
+    color: red;
+}
+
+/* box model */
+.contentBox {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: solid 10px lightgreen;
+    margin: 10px;
+  }
+  .borderBox {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: solid 10px lightgreen;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+  /* width, height */
+.fixedWidth {
+    width: 250px;
+    height: 150px;
+    background-color: moccasin;
+  }
+  .percentageWidth {
+    width: 50%;
+    background-color: lightgrey;
+  }
+
+  .divWith4Paddings {
+    padding: 25px 50px 75px 100px;
+    border: solid 1px lightgreen;
+    /* identical to:
+      padding-top: 25px;
+      padding-right: 50px;
+      padding-bottom: 75px;
+      padding-left: 100px;
+      */
+  }
+  .divWith3Paddings {
+    padding: 25px 50px 75px;
+    border: solid 1px lightgreen;
+    /* indentical to:
+      top padding is 25px
+      right and left paddings are 50px
+      bottom padding is 75px
+      */
+  }
+  .divWith2Paddings {
+    padding: 25px 50px;
+    border: solid 1px lightgreen;
+    /* identical to:
+      top and bottom paddings are 25px
+      right and left paddings are 50px
+      */
+  }
+  .divWith1Padding {
+    padding: 25px;
+    border: solid 1px lightgreen;
+    /* identical to:
+      all four paddings are 25px
+      */
+  }
+
+  .h1WithBorder {
+    border: 5px solid red;
+    border-style: dotted;
+  }
+
+  .floatRight {
+    float: right;
+  }
+
+  .box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73ad21;
+  }
+
+  div.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    border: 3px solid #73ad21;
+  }
+
+  div.absolute {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73ad21;
+  }
+
+  div.relativeWithAbsoluteInside {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73ad21;
+  }
+  div.absoluteInsideRelative {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73ad21;
+  }
+
+  div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #a26482;
+    border: 2px solid #af4c93;
+  }
+
+  .divVisibilityHidden {
+    visibility: hidden;
+}
+.divDisplayNone {
+    display: none;
+}

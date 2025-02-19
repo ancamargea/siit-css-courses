@@ -1,0 +1,54 @@
+p {
+  color: red;
+}
+
+ul#summer-drinks li {
+  font-weight: normal;
+  font-size: 12px;
+  color: black;
+}
+
+.favorite {
+  color: red;
+  font-weight: bold;
+}
+
+ul#summer-drinks li.favorite {
+  color: red;
+  font-weight: bold;
+}
+
+html body ul#summer-drinks li.favorite {
+  color: red;
+  font-weight: bold;
+}
+
+.favorite {
+  color: red !important;
+  font-weight: bold !important;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+/* visited link */
+a:visited {
+  color: green;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+
+a[target] {
+  background-color: yellow;
+}
+
+[class^="top"] {
+  background: yellow;
+}
